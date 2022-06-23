@@ -48,6 +48,7 @@ a {
 	background-color: #3584e4;
 	padding: 0.5em;
 	color: white;
+	/* #TODO Fix Scalability */
 }
 
 a:hover {
@@ -62,19 +63,27 @@ a:hover {
 	background-color: #26A269;
 }
 
-article {
-
+article h1 {
+	font-size: 200%;
 }
 
 .grid {
 	border-radius: 1em;
 	background-color: #303030;
 	padding: 3em;
+	padding-right: 4em;
 	margin: 1em;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	grid-gap: 2em;
   align-self: center;
+}
+
+.text {
+	border-radius: 1em;
+	background-color: #303030;
+	padding: 1em 3em;
+	margin: 1em;
 }
 
 .website {
