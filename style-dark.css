@@ -21,6 +21,7 @@ header {
 
 header h1 {
 	font-size: 300%;
+	margin: 0.5em 1em 0em 1em;
 }
 
 nav {
@@ -111,8 +112,38 @@ article h1 {
 	max-width: 30%;
 	min-width: 300px;
 	border-radius: 1em;
+	margin-bottom: 1em;
 }
 
 footer {
 	font-style: italic;
+}
+
+@media (max-width: 640px) {
+	nav {
+		font-size: 80%;
+	}
+	article > h1 {
+		font-size: 150%;
+	}
+	.grid {
+		padding: 1em;
+		grid-template-columns: 1fr;
+	}
+	.grid > a {
+		padding: 1em;
+		padding-bottom: 0em;
+	}
+	.website {
+		min-width: 100px;
+	}
+	.website img {
+		max-width: 250px;
+	}
+	.text {
+		font-size: 80%;
+	}
+	.me {
+		min-width: 200px;
+	}
 }
