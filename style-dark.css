@@ -1,4 +1,4 @@
-@font-face { font-family: Cantarell; src: url('cantarell-vf.otf'); }
+@font-face { font-family: Cantarell; src: url('cantarell-vf.otf'); font-weight: bold}
 
 html {
 	font-family: Cantarell;
@@ -71,7 +71,7 @@ article h1 {
 	border-radius: 1em;
 	background-color: #303030;
 	padding: 3em;
-	padding-right: 4em;
+	/* #TODO Check for asymmetries */
 	margin: 1em;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -104,6 +104,13 @@ article h1 {
 	width: auto;
 	height: auto;
 	max-width: 450px;
+	border-radius: 1em;
+}
+
+.me {
+	max-width: 30%;
+	min-width: 300px;
+	border-radius: 1em;
 }
 
 footer {
