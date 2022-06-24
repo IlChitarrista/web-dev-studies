@@ -1,0 +1,118 @@
+@font-face { font-family: Cantarell; src: url('cantarell-vf.otf'); font-weight: bold}
+
+html {
+	font-family: Cantarell;
+	background-color: #242424;
+	color: white;
+	text-align: center;
+	display: grid;
+	grid-template: center;
+}
+
+header {
+	margin-top: 1em;
+	border-radius: 1em;
+	background-color: #303030;
+	padding: 1em 0em;
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header h1 {
+	font-size: 300%;
+}
+
+nav {
+	border-radius: 1em;
+	background-color: #353535;
+	max-width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav ul {
+	list-style: none;
+	padding: 2em 0em;
+}
+
+nav ul li {
+	font-size: 125%;
+	display: inline;
+	margin: 0.25em;
+}
+
+a {
+	text-decoration: none;
+	border-radius: 1em;
+	background-color: #3584e4;
+	padding: 0.5em;
+	color: white;
+	/* #TODO Fix Scalability */
+}
+
+a:hover {
+	background-color: #4990e7;
+}
+
+.selected {
+	background-color: #26A269;
+}
+
+.selected:hover {
+	background-color: #26A269;
+}
+
+article h1 {
+	font-size: 200%;
+}
+
+.grid {
+	border-radius: 1em;
+	background-color: #303030;
+	padding: 3em;
+	/* #TODO Check for asymmetries */
+	margin: 1em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-gap: 2em;
+  align-self: center;
+}
+
+.text {
+	border-radius: 1em;
+	background-color: #303030;
+	padding: 1em 3em;
+	margin: 1em;
+}
+
+.website {
+	border-radius: 1em;
+	background-color: #353535;
+	padding-top: 2em;
+	padding-bottom: 0em;
+	margin: 0em auto;
+	max-width: 500px;
+	min-width: 500px;
+}
+
+.website:hover {
+	background-color: #3584e4;
+}
+
+.website img {
+	width: auto;
+	height: auto;
+	max-width: 450px;
+	border-radius: 1em;
+}
+
+.me {
+	max-width: 30%;
+	min-width: 300px;
+	border-radius: 1em;
+}
+
+footer {
+	font-style: italic;
+}
