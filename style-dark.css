@@ -112,13 +112,14 @@ article h1 {
 	max-width: 30%;
 	min-width: 300px;
 	border-radius: 1em;
+	margin-bottom: 1em;
 }
 
 footer {
 	font-style: italic;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
 	nav {
 		font-size: 80%;
 	}
