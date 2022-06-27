@@ -1,4 +1,4 @@
-@font-face { font-family: Cantarell; src: url('cantarell-vf.otf'); font-weight: bold}
+@font-face { font-family: Cantarell; src: url('../../cantarell-vf.otf'); font-weight: bold}
 
 html {
 	font-family: Cantarell;
@@ -49,7 +49,6 @@ a {
 	background-color: #3584e4;
 	padding: 0.5em;
 	color: white;
-	/* #TODO Fix Scalability */
 }
 
 a:hover {
@@ -64,55 +63,82 @@ a:hover {
 	background-color: #26A269;
 }
 
+article > input {
+	border-radius: 0.5em;
+	border-style: solid;
+	border-color: #3584e4;
+	background-color: #303030;
+	caret-color: white;
+	color: white;
+	text-align: center;
+	font-size: 150%;
+	width: 80vw;
+	max-width: 25em;
+}
+
+article > input:hover {
+	border-color: #4990e7;
+}
+
+article > button {
+	margin-top: 1em;
+	border-radius: 0.3em;
+	border-color: #3584e4;
+	background-color: #3584e4;
+	color: white;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+article > button:hover {
+	border-color: #4990e7;
+	background-color: #4990e7;
+}
+
 article h1 {
 	font-size: 200%;
 }
 
-.grid {
+#grid {
 	border-radius: 1em;
 	background-color: #303030;
 	padding: 3em;
-	/* #TODO Check for asymmetries */
 	margin: 1em;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	grid-gap: 2em;
-  align-self: center;
 }
 
-.text {
-	border-radius: 1em;
-	background-color: #303030;
-	padding: 1em 3em;
-	margin: 1em;
-}
-
-.website {
+.item {
 	border-radius: 1em;
 	background-color: #353535;
-	padding-top: 2em;
-	padding-bottom: 0em;
-	margin: 0em auto;
-	max-width: 500px;
-	min-width: 500px;
 }
 
-.website:hover {
+.item img {
+	float: right;
+	margin: 0.5em 0.5em 0em 0em;
+	background-color: #c01c28;
+	border-radius: 1em;
+}
+
+.item h3 {
+	margin: 1em;
+	clear: right;
+	word-wrap: break-word;
+}
+
+.item:hover {
 	background-color: #3584e4;
+	cursor: pointer;
 }
 
-.website img {
-	width: auto;
-	height: auto;
-	max-width: 450px;
-	border-radius: 1em;
+.done {
+	text-decoration: line-through;
+	background-color: #26A269;
 }
 
-.me {
-	max-width: 30%;
-	min-width: 300px;
-	border-radius: 1em;
-	margin-bottom: 1em;
+.done:hover {
+	background-color: #26A269;
 }
 
 footer {
@@ -120,30 +146,47 @@ footer {
 }
 
 @media (max-width: 640px) {
+	header {
+		font-size: 80%;
+	}
+
 	nav {
 		font-size: 80%;
 	}
+
 	article > h1 {
 		font-size: 150%;
 	}
+
 	.grid {
 		padding: 1em;
 		grid-template-columns: 1fr;
 	}
+
 	.grid > a {
 		padding: 1em;
 		padding-bottom: 0em;
 	}
+
 	.website {
 		min-width: 100px;
 	}
+
 	.website img {
 		max-width: 250px;
 	}
+
 	.text {
 		font-size: 80%;
 	}
+
 	.me {
 		min-width: 200px;
 	}
+
+	.item img {
+		width: 20px;
+		height: 20px;
+	}
+
 }
