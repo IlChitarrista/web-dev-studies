@@ -1,0 +1,22 @@
+{
+  "name": "web-dev-studies",
+  "version": "1.0.0",
+  "description": "This will be a way for me to keep track of my progress with Web Development and Programming in General.",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IlChitarrista/web-dev-studies.git"
+  },
+  "author": "Mattia Formichetti",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/IlChitarrista/web-dev-studies/issues"
+  },
+  "homepage": "https://github.com/IlChitarrista/web-dev-studies#readme",
+  "dependencies": {
+
+  }
+}
